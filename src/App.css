@@ -1,0 +1,36 @@
+html, body, #root, .App {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic Pro', Hiragino Kaku Gothic ProN, Helvetica Neue, Verdana, Meiryo, Yu Gothic, YuGothic, 'M+ 1p', sans-serif;
+
+    background: #24252F;
+    color: azure;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleBarContainer {
+    height: 23px;
+    -webkit-app-region: drag;
+    text-align: center;
+    padding-top: 2px;
+    font-weight: 100;
+}
+
+.mainContainer {
+    flex: auto;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.logo {
+    height: 1rem;
+}
