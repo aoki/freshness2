@@ -13,14 +13,6 @@ html, body, #root, .App {
     flex-direction: column;
 }
 
-.titleBarContainer {
-    height: 23px;
-    -webkit-app-region: drag;
-    text-align: center;
-    padding-top: 2px;
-    font-weight: 100;
-}
-
 .mainContainer {
     flex: auto;
     padding: 0px;

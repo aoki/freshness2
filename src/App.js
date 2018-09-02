@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TitleBar from "./components/title-bar";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="titleBarContainer">
-          <span><img src={logo} className="logo"/>Hello Electron</span>
-        </div>
+        <TitleBar title="Hello Electron" />
         <div className="mainContainer">
           <h1>Hello Electron</h1>
           <ul>

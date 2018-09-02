@@ -1,0 +1,7 @@
+.titleBarContainer {
+    height: 23px;
+    -webkit-app-region: drag;
+    text-align: center;
+    padding-top: 2px;
+    font-weight: 100;
+}
