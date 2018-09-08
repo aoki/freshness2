@@ -15,6 +15,5 @@
     "eject": "react-scripts eject",
     "dev": "nf start"
   },
-  "main": "./node_modules/react-electron-shell/electron-starter.js",
-  "homepage": "./"
+  "main": "./electron.js"
 }
