@@ -1,4 +1,6 @@
 require('./ipc');
+const shell = require('electron').shell;
+
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
@@ -23,6 +25,10 @@ function createWindow() {
     titleBarStyle: "hidden"
   });
 
+  mainWindow.webContents.on('new-window', (event, url) => {
+    event.preventDefault();
+    shell.openExternal(url);
+  })
 
   // and load the index.html of the app.
   const startUrl = process.env.ELECTRON_START_URL || url.format({

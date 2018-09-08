@@ -15,8 +15,9 @@ html, body, #root, .App {
 
 .mainContainer {
     flex: auto;
-    padding: 0px;
-    padding-left: 10px;
+    padding: 0 0 0 10px;
+    height: 100%;
+    overflow: scroll;
 }
 
 h1 {

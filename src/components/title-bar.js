@@ -6,7 +6,8 @@ class TitleBar extends Component {
   render() {
     return (
       <div className="titleBarContainer">
-        <span><img src={logo} className="logo"/>{this.props.title}</span>
+        <span><img src={logo} alt="logo" className="logo"/>{this.props.title}</span>
+        <span className="version"> {this.props.version}</span>
       </div>
     );
   }

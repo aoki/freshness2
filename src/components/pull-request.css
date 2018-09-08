@@ -1,0 +1,14 @@
+a {
+    color: #EE75BE;
+}
+
+.avatarIcon {
+    /*border-radius: 50%;*/
+    border-radius: 2px;
+    height: 1rem;
+    width: 1rem;
+}
+
+.authorIcon {
+    margin-right: 10px;
+}
