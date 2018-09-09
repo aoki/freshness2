@@ -1,21 +1,57 @@
 {
   "name": "freshness",
   "version": "0.1.0",
+  "description": "Multi organization pull request viewer",
+  "author": {
+    "name": "aoki",
+    "email": "ringohub@gmail.com"
+  },
+  "main": "./electron.js",
+  "homepage": "./",
   "private": true,
+  "build": {
+    "productName": "freshness",
+    "appId": "com.ringohub.freshness.desktop",
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "extends": null
+  },
   "dependencies": {
     "@octokit/rest": "15.11.1",
     "electron-store": "2.0.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-electron-shell": "0.1.2",
-    "react-scripts": "1.1.5"
+    "react": "16.4.2",
+    "react-dom": "16.4.2"
+  },
+  "devDependencies": {
+    "electron": "2.0.8",
+    "electron-builder": "20.28.4",
+    "react-scripts": "2.0.0-next.b2fd8db8"
   },
   "scripts": {
+    "pack": "electron-builder --mac --x64",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "dev": "nf start"
   },
-  "main": "./electron.js"
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  }
 }
