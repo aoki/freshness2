@@ -1,2 +1,2 @@
 react: npm start
-electron: node ./node_modules/react-electron-shell/electron-wait-react
+electron: node ./electron-wait-react
