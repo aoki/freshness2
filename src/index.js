@@ -7,6 +7,11 @@ import registerServiceWorker from './registerServiceWorker';
 const {ipcRenderer} = window.require('electron');
 const config = ipcRenderer.sendSync('load-config');
 
+if (config.githubApiToken === '' || config.githubBaseUrl === '') {
+  ipcRenderer.sendSync('save-config', config);
+  ipcRenderer.send('edit-config');
+}
+
 const octokit = require('@octokit/rest')({
   timeout: 10,
   headers: {
@@ -18,6 +23,8 @@ octokit.authenticate({
   type: 'token',
   token: config.githubApiToken
 });
+
+
 
 ReactDOM.render(<App apiClient={octokit} config={config}/>, document.getElementById('root'));
 registerServiceWorker();

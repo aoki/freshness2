@@ -31,6 +31,7 @@
   "devDependencies": {
     "electron": "2.0.8",
     "electron-builder": "20.28.4",
+    "foreman": "3.0.1",
     "react-scripts": "2.0.0-next.b2fd8db8"
   },
   "scripts": {
